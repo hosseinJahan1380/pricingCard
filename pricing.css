@@ -27,7 +27,7 @@ body{
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-  
+    
 }
 .signUp{
     padding: 10px 80px;
@@ -37,7 +37,12 @@ body{
     margin-top: 25px;
     border: none;
     border-radius: 5px;
-
+    cursor: pointer;
+    opacity: 80%;
+}
+.signUp:hover{
+    opacity: 100%;
+    font-weight: bold;
 }
 .top-section{
     padding: var(--padding-sections);
@@ -54,7 +59,6 @@ body{
     margin-bottom: 20px;
 }
 .top-section p{
-    width: 500px;
     color: var(--text-color);
     line-height: 1;
 }
@@ -64,7 +68,6 @@ body{
 .bottom-section{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    flex-grow: 1;
     color: var(--primary_color);
 }
 .subscribe , .why{
@@ -101,19 +104,26 @@ body{
 .why ul li{
     opacity: 60%;
     line-height: 1.2;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 @media (max-width:768px){
     .bottom-section{
         grid-template-columns: 1fr;
     }
+    .container{
+        margin-top: 150px;
+    }
 }
 @media (max-width:480px){
+
     .subscribe {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .why{
+        padding-bottom: 10px;
     }
 }
 
